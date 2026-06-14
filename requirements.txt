@@ -1,0 +1,4 @@
+# No external packages required for basic app
+# Add these only if you want web scraping features:
+requests
+beautifulsoup4
