@@ -71,6 +71,13 @@ class LoginWindow:
         self.current_code = self.generate_code()
         self.code_label.config(text=self.current_code)
 
+    # ===== ADD THIS METHOD =====
+    def show(self):
+        """Show the login window after logout."""
+        self.root.deiconify()
+        self.root.lift()
+        self.refresh_code()       # new code on each return to login
+
     def do_login(self):
         username = self.username_entry.get().strip()
         password = self.password_entry.get().strip()
