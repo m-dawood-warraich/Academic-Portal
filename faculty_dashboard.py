@@ -177,3 +177,4 @@ class FacultyDashboard:
     def logout(self):
         self.root.destroy()
         self.login_window.show()
+        
