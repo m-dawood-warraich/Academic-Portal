@@ -172,7 +172,9 @@ def get_topuniversities_scholarships():
         ]
 
 # ------------------------------------------------------------------
+
 # 5. COMBINED EXTERNAL SCHOLARSHIPS (HEC + TopUniversities)
+
 # ------------------------------------------------------------------
 def get_external_scholarships_live():
     """Return combined external scholarships from HEC and TopUniversities."""
