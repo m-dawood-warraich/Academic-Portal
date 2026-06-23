@@ -104,12 +104,14 @@ class AdminDashboard:
         for item in self.course_tree.get_children(): self.course_tree.delete(item)
         for c in get_all_courses(): self.course_tree.insert("", tk.END, values=c)
 
+    
     def create_reports_tab(self):
         tab = ttk.Frame(self.notebook)
         self.notebook.add(tab, text="Reports")
         s, f, c = get_system_stats()
         tk.Label(tab, text=f"Total Students: {s}\nTotal Faculty: {f}\nTotal Courses: {c}", font=("Courier", 12), bg="white").pack(padx=20, pady=20, anchor=tk.W)
 
+    
     def logout(self):
         self.root.destroy()
         self.login_window.show()
