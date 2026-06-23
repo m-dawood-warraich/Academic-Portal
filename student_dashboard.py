@@ -360,6 +360,7 @@ class StudentDashboard:
             text_widget.config(state=tk.DISABLED)
         threading.Thread(target=fetch, daemon=True).start()
 
+    
     # ---------- Logout ----------
     def logout(self):
         self.root.destroy()
