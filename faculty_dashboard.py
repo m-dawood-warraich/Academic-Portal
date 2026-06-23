@@ -129,6 +129,7 @@ class FacultyDashboard:
             messagebox.showinfo("Success", "Grades updated")
         ttk.Button(self.grade_frame, text="Save Grades", command=save).pack(pady=10)
 
+    
     def create_assignments_tab(self):
         tab = ttk.Frame(self.notebook)
         self.notebook.add(tab, text="Add Assignment")
@@ -174,6 +175,7 @@ class FacultyDashboard:
             self.max_entry.delete(0, tk.END)
         ttk.Button(tab, text="Create Assignment", command=submit).grid(row=5, column=0, columnspan=2, pady=20)
 
+    
     def logout(self):
         self.root.destroy()
         self.login_window.show()
