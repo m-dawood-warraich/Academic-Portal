@@ -23,4 +23,6 @@ A complete desktop application for students, faculty, and admin, built with Pyth
    git clone https://github.com/m-dawood-warraich/Academic-Portal.git
    cd Academic-Portal
    Python main.py
+
+   
    
